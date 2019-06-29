@@ -1,0 +1,57 @@
+Newspeak3
+'Gravatar'
+class Gravatar usingPlatform: platform = (|
+	WebUtils = platform squeak WebUtils.
+	HTTPSocket = platform squeak HTTPSocket.
+	ImageReadWriter = platform squeak ImageReadWriter.
+	ReadStream = platform squeak ReadStream.
+|) (
+public retrieveImageForEmail: emailString = (
+	^ self retrieveImageForEmail: emailString size: 80 rating: 'pg'
+)
+public retrieveImageForEmail: emailString size: sizeInteger rating: ratingString = (
+	| md5 newSize newRating url stream |
+	newSize:: sizeInteger > 2048
+				ifTrue: [2048]
+				ifFalse: [sizeInteger max: 1].
+	newRating:: ratingString isNil
+				ifTrue: ['pg']
+				ifFalse: [ratingString].
+	md5:: WebUtils md5Digest: emailString.
+	url:: 'http://www.gravatar.com/avatar/' , md5 , '?s=' , newSize, '&r=', ratingString.
+	stream:: HTTPSocket httpGet: url.
+	stream binary; reset.
+	stream
+		ifNil: [^ nil]
+		ifNotNil: [^ (ImageReadWriter formFromStream: stream) asMorph]
+)
+public retrieveProfileForEmail: emailString = ( 
+	| stream md5 url contents dict |
+	md5:: WebUtils md5Digest: emailString.
+	url:: 'http://www.gravatar.com/' , md5 , '.json'.
+	[stream:: HTTPSocket httpGet: url.
+	contents:: ReadStream on: stream contents.
+	dict:: WebUtils jsonDecode: contents.
+	dict
+		ifNil: [^ nil]
+		ifNotNil: [^ (dict at: 'entry')
+				at: 1]]
+		on: Error
+		do: [:e | ^ e ]
+)
+) : (
+public retrieveProfileForEmail: emailString = ( 
+	| stream md5 url contents dict |
+	md5:: WebUtils md5Digest: emailString.
+	url:: 'http://www.gravatar.com/' , md5 , '.json'.
+	[stream:: HTTPSocket httpGet: url.
+	contents:: ReadStream on: stream contents.
+	dict:: WebUtils jsonDecode: contents.
+	dict
+		ifNil: [^ nil]
+		ifNotNil: [^ (dict at: 'entry')
+				at: 1]]
+		on: Error
+		do: [:e | ^ e ]
+)
+)
