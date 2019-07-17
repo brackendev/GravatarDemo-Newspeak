@@ -46,7 +46,6 @@ gravatar retrieveImageForEmail: 'email@example.com'.
 * The [Automattic](http://www.automattic.com/) team for running and supporting Gravatar's free service.
 * [Gilad Bracha](http://www.bracha.org/), [Peter Ahe](https://github.com/peter-ahe-google), [Vassili Bykov](http://blog.3plus4.org/), [Ryan Macnak](https://github.com/rmacnak), Bill Maddox, [Yaron Kashai](https://www.linkedin.com/in/yaronkashai/), the [Ministry of Truth team](https://github.com/orgs/newspeaklanguage/people), and [contributors](https://github.com/newspeaklanguage/newspeak/graphs/contributors) for Newspeak, the new programming language in the tradition of Self and Smalltalk. Newspeak is highly dynamic and reflective - but designed to support modularity and security. It supports both object-oriented and functional programming.
 * [Eliot Miranda](http://www.mirandabanda.org/cogblog/microbio/), the [OpenSmalltalk team](https://github.com/orgs/OpenSmalltalk/people), and [contributors](https://github.com/OpenSmalltalk/opensmalltalk-vm/graphs/contributors) for [OpenSmalltalk](https://github.com/OpenSmalltalk/opensmalltalk-vm) ([Cog](http://www.mirandabanda.org/cogblog/about-cog/)), the cross-platform virtual machine for Squeak, Pharo, Cuis, and Newspeak.
-* The [Squeak Oversight Board](https://squeak.org/board/) and contributors for [Squeak](http://www.squeak.org/), the open-source [Smalltalk](https://en.wikipedia.org/wiki/Smalltalk) programming system with fast execution environments for all major platforms.
 
 ## Author
 
