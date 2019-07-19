@@ -18,7 +18,7 @@ GravatarDemo-Newspeak
 
 ## Example Usage
 
-In a Newspeak workspace, evaluate:
+In a Workspace, evaluate:
 
 ```newspeak
 (* Retrieve the image for the email address *)
