@@ -1,4 +1,4 @@
-_My Gravatar demo projects are for users to get acquainted with languages and platforms with something more than a "Hello World" example. Versions are available for [Clojure](https://github.com/brackendev/GravatarDemo-Clojure), [F#](https://github.com/brackendev/GravatarDemo-FSharp), [Newspeak](https://github.com/brackendev/GravatarDemo-Newspeak), [Pharo](https://github.com/brackendev/GravatarDemo-Pharo), and [Squeak](https://github.com/brackendev/GravatarDemo-Squeak)._
+_My Gravatar demo projects are for users to get acquainted with languages and platforms with something more than a "Hello World" example. Versions are available for [Clojure](https://github.com/brackendev/GravatarDemo-Clojure), [F#](https://github.com/brackendev/GravatarDemo-FSharp), [Newspeak](https://github.com/brackendev/GravatarDemo-Newspeak), [Pharo](https://github.com/brackendev/GravatarDemo-Pharo), [Racket](https://github.com/brackendev/GravatarDemo-Racket), and [Squeak](https://github.com/brackendev/GravatarDemo-Squeak)._
 
 - - -
 
@@ -10,15 +10,14 @@ GravatarDemo-Newspeak
 
 ## Installation
 
-1. Install and setup [Newspeak](http://www.newspeaklanguage.org/).
-2. Download this project.
-3. In the **Newspeak Browser**, select _Repositories_. Add a new repository with the local repository path.
-4. Select the repository then select _revert_ in the _Image_ column.
-5. After syncing, the Gravatar namespace will be accessible.
+1. Install and run [Newspeak](http://www.newspeaklanguage.org/).
+2. In the **Newspeak Browser**, select _Repositories_. Add a new repository with the local repository path (this downloaded project).
+3. Select the repository then select _revert_ in the _Image_ column.
+4. After syncing, the Gravatar namespace will be accessible.
 
 ## Example Usage
 
-In a Workspace, evaluate:
+Evaluate in a Workspace:
 
 ```newspeak
 (* Retrieve the image for the email address *)
