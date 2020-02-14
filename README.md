@@ -10,10 +10,11 @@ GravatarDemo-Newspeak
 
 ## Installation
 
-1. Install and run [Newspeak](http://www.newspeaklanguage.org/).
-2. In the **Newspeak Browser**, select _Repositories_. Add a new repository with the local repository path (this downloaded project).
-3. Select the repository then select _revert_ in the _Image_ column.
-4. After syncing, the Gravatar namespace will be accessible.
+1. Download this project.
+2. Install and run [Newspeak](http://www.newspeaklanguage.org/).
+3. In the **Newspeak Browser**, select _Repositories_. Add a new repository with the local repository path (this project's location).
+4. Select the repository then select _revert_ in the _Image_ column.
+5. After syncing, the Gravatar namespace will be accessible.
 
 ## Example Usage
 
