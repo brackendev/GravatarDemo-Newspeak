@@ -43,7 +43,11 @@ gravatar retrieveImageForEmail: 'email@example.com'.
 
 ## Author
 
-[brackendev](https://www.github.com/brackendev)
+Bracken Spencer
+
+* [GitHub](https://www.github.com/brackendev)
+* [LinkedIn](https://www.linkedin.com/in/brackenspencer/)
+* [Twitter](https://twitter.com/brackendev)
 
 ## License
 
