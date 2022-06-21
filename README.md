@@ -8,6 +8,10 @@ GravatarDemo-Newspeak
 
 * [Newspeak 2018-05-12](http://www.newspeaklanguage.org/) reference platform.
 
+## TODO
+
+- [ ] Support the latest Newspeak release.
+
 ## Installation
 
 1. Download this project.
